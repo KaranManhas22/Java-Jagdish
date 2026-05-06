@@ -11,7 +11,7 @@ public class Main {
 
         // Bind to all network interfaces (IMPORTANT for Docker/EC2)
         HttpServer server = HttpServer.create(
-                new InetSocketAddress("0.0.0.0", 8080), 0
+                new InetSocketAddress("0.0.0.0", 8000), 0
         );
 
         server.createContext("/", new MyHandler());
